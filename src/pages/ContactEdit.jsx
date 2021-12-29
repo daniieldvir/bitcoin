@@ -46,12 +46,6 @@ export default class ContactEdit extends Component {
     return (
       <div className="content-edit">
         <h1> {contact._id ? 'Edit' : 'Add'} Content</h1>
-        <section className="btn-nav">
-          <button onClick={this.onGoBack}>Back</button>
-          <button onClick={() => this.onRemoveContact(contact._id)}>
-            Remove Contact
-          </button>
-        </section>
 
         <section className="content-det">
           <img src={`https://robohash.org/${contact.name}?set=set4`} alt="" />
@@ -87,6 +81,12 @@ export default class ContactEdit extends Component {
 
             <button>Save</button>
           </form>
+        </section>
+        <section className="btn-nav">
+          <button onClick={this.onGoBack}>Back</button>
+          <button onClick={() => this.onRemoveContact(contact._id)}>
+            Remove Contact
+          </button>
         </section>
       </div>
     );

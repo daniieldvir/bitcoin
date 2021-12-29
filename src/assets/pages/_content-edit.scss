@@ -28,14 +28,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      //   flex-direction: column;
+      flex-direction: column;
 
       label {
         font-size: rem(16px);
-        width: 110px;
       }
       input {
         width: 200px;
+        height: 40px;
         margin: 10px;
       }
     }

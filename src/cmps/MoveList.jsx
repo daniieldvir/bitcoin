@@ -4,13 +4,14 @@ export default function MoveList({ moves }) {
   console.log('moves', moves);
   return (
     <div>
-      <section>
-        {!moves.length ? ' ' : <h2>Your Last Moves</h2>}
+      <section className="moves">
         <hr />
+        {!moves.length ? ' ' : <h2>Your Last Moves</h2>}
+
         {moves.map((move) => (
-          <div key={move.to._id + Math.random()}>
-            <h3>To {move.to.name} </h3>➡<h3>Amount: {move.amount} Coins</h3>➡
-            <h3>Sent at: {move.sentAt} </h3>{' '}
+          <div className="moves-det" key={move.to._id + Math.random()}>
+            <p>To: {move.to.name} </p>➡<p>Amount: {move.amount} Coins</p>➡
+            <p>Sent at: {move.sentAt} </p>{' '}
           </div>
         ))}
       </section>
