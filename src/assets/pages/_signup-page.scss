@@ -1,0 +1,23 @@
+.signup-page {
+  text-align: center;
+
+  img {
+    margin-bottom: 20px;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: rem(40px);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+
+    button {
+      margin-top: 10px;
+    }
+  }
+}

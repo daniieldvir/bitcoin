@@ -1,0 +1,19 @@
+.app-header {
+  background: darkblue;
+  section.container {
+    display: flex;
+    align-items: center;
+    color: white;
+    .logo {
+      flex-grow: 1;
+    }
+    .back-container {
+      flex-grow: 1;
+    }
+    nav {
+      a:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
