@@ -1,5 +1,5 @@
 import { storageService } from './async-storage.service';
-
+// import { localStorage } from './storageService';
 export const userService = {
   getUser,
   addMove,
@@ -10,6 +10,7 @@ const USER_KEY = 'user';
 let loggedInUser;
 
 function getUser() {
+  //  Promise.resolve(localStorage.getItem(USER_KEY));
   return storageService.query(USER_KEY);
 }
 
