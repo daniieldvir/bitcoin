@@ -61,7 +61,6 @@ export default class ContactEdit extends Component {
             />
             <label htmlFor="email">Content Email:</label>
             <input
-              ref={this.inputRef}
               onChange={this.handleChange}
               value={contact.email}
               type="text"
@@ -71,7 +70,6 @@ export default class ContactEdit extends Component {
 
             <label htmlFor="phone">Content Phone:</label>
             <input
-              ref={this.inputRef}
               onChange={this.handleChange}
               value={contact.phone}
               type="text"

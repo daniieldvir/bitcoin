@@ -7,7 +7,7 @@
 
   img {
     width: 100px;
-    margin-top: 20px;
+    margin: 20px;
   }
   button {
     margin: 20px;
@@ -15,5 +15,11 @@
 
   a:hover {
     text-decoration: underline;
+  }
+
+  .transfer-fund {
+    background-color: rgba(135, 206, 250, 0.544);
+    width: 500px;
+    border-radius: 10px;
   }
 }

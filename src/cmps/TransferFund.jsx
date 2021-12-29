@@ -19,7 +19,7 @@ export default function TransferFund({ addMove, contact }) {
 
   return (
     <div>
-      <form>
+      <form className="transfer-fund">
         <label htmlFor="v">How many coins to move: </label>
         <input
           onChange={handleChange}

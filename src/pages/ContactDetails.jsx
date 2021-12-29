@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MoveList from '../cmps/MoveList';
 import TransferFund from '../cmps/TransferFund';
 
 import contactService from '../services/contactService';
@@ -41,19 +42,18 @@ export default class ContactDetails extends Component {
     if (!contact) return <div>Loading...</div>;
 
     return (
-      <div className="contact-details">
+      <section className="contact-details">
         <h2> {contact.name}</h2>
         <h2> {contact.phone}</h2>
         <h2> {contact.email}</h2>
         <img src={`https://robohash.org/${contact.name}?set=set4`} alt="" />
 
         <TransferFund addMove={this.addMove} contact={contact} />
-
         <section>
           <button onClick={this.onGoBack}>Back</button>
           <Link to={`/contact/edit/${contact._id}`}>Edit Contact</Link>
         </section>
-      </div>
+      </section>
     );
   }
 }
